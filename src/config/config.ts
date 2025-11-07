@@ -9,4 +9,13 @@ const primary_menu = [
   { name: "contact", link: "/contact" },
 ];
 
-export { default_info, primary_menu };
+const services_menu = [
+  { name: "3PL logistic", link: "/" },
+  { name: "Inventory Management", link: "/" },
+];
+
+const secondary_menu = [
+  { name: "terms & policies", link: "/terms-and-policies" },
+];
+
+export { default_info, primary_menu, secondary_menu, services_menu };

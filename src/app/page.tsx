@@ -1,6 +1,6 @@
 import ServiceSection from "./components/custom/service";
 import MovingCards from "./components/shadcn/moving_cards";
-import TestimonialsSection from "./components/shadcn/testimonials";
+// import TestimonialsSection from "./components/shadcn/testimonials";
 import Herosection from "./home/herosection";
 import StatsSection from "./home/statssection";
 import WhyChooseSection from "./home/whychoosesection";
@@ -14,8 +14,8 @@ export default function Home() {
       <StatsSection />
       <hr className="my-4 border-t-2 border-gray-300" />
       <WhyChooseSection />
-      <hr className="my-4 border-t-2 border-gray-300" />
-      <TestimonialsSection />
+      {/* <hr className="my-4 border-t-2 border-gray-300" /> */}
+      {/* <TestimonialsSection /> */}
       <hr className="my-4 border-t-2 border-gray-300" />
       <MovingCards />
     </div>

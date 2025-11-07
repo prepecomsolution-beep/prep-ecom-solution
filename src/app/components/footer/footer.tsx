@@ -1,4 +1,9 @@
-import { default_info, primary_menu } from "@/config/config";
+import {
+  default_info,
+  primary_menu,
+  secondary_menu,
+  services_menu,
+} from "@/config/config";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
@@ -18,37 +23,37 @@ function Footer() {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 w-full">
-          <nav className="grid gap-1">
+          <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Company</h2>
             {primary_menu.map((each) => (
               <Link
                 key={each.link}
                 href={`${each.link}`}
-                className="capitalize"
+                className="capitalize hover:underline"
               >
                 {each.name}
               </Link>
             ))}
           </nav>
-          <nav className="grid gap-1">
+          <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Solutions</h2>
-            {primary_menu.map((each) => (
+            {services_menu.map((each) => (
               <Link
                 key={each.link}
                 href={`${each.link}`}
-                className="capitalize"
+                className="capitalize hover:underline"
               >
                 {each.name}
               </Link>
             ))}
           </nav>
-          <nav className="grid gap-1">
+          <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Policies</h2>
-            {primary_menu.map((each) => (
+            {secondary_menu.map((each) => (
               <Link
                 key={each.link}
                 href={`${each.link}`}
-                className="capitalize"
+                className="capitalize hover:underline"
               >
                 {each.name}
               </Link>
