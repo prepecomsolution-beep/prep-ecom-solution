@@ -20,7 +20,9 @@ function Header() {
 
       <div className="max-w-7xl mx-auto">
         <header className="flex justify-between items-center">
-          <h1 className="text-2xl font-semibold">Prep Ecom Solutions</h1>
+          <h1 className="text-2xl font-bold text-primary">
+            Prep Ecom Solution
+          </h1>
           {/* Mobile menu trigger */}
           {isMenuHide ? (
             <button className="md:hidden" onClick={() => setIsMenuHide(false)}>
@@ -109,10 +111,6 @@ function MobileNav({
             {each.name}
           </Link>
         ))}
-        <div className="flex gap-2 mt-4 flex-wrap">
-          <button className="primaryBtn">Request a Quote</button>
-          <button className="secondaryBtn">Contact Us</button>
-        </div>
       </div>
     </nav>
   );

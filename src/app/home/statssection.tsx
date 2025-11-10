@@ -14,7 +14,7 @@ function StatsSection() {
               <h2 className="lg:text-8xl md:text-6xl sm:text-4xl text-3xl font-bold text-primary">
                 99.8%
               </h2>
-              <p className="lg:text-4xl md:text-3xl sm:text-2xl text-xl">
+              <p className="lg:text-3xl sm:text-2xl text-xl">
                 Inventory Accuracy in SLA
               </p>
             </div>
@@ -25,7 +25,7 @@ function StatsSection() {
               <h2 className="lg:text-4xl md:text-3xl text-2xl  font-bold text-primary">
                 99.5%
               </h2>
-              <p className="lg:text-xl md:text-lg">Inventory Accuracy in SLA</p>
+              <p className="text-lg">Orders processed within 24 hours</p>
             </div>
           </div>
           {/* 2 */}
@@ -33,9 +33,9 @@ function StatsSection() {
             <span className="h-full inline-block w-2 bg-primary rounded-sm"></span>
             <div>
               <h2 className="lg:text-4xl md:text-3xl text-2xl  font-bold text-primary">
-                99.5%
+                220+
               </h2>
-              <p className="lg:text-xl md:text-lg">Inventory Accuracy in SLA</p>
+              <p className="text-lg">Countries DDU/DDP export capabilities</p>
             </div>
           </div>
           {/* 3 */}
@@ -43,9 +43,9 @@ function StatsSection() {
             <span className="h-full inline-block w-2 bg-primary rounded-sm"></span>
             <div>
               <h2 className="lg:text-4xl md:text-3xl text-2xl  font-bold text-primary">
-                99.5%
+                48
               </h2>
-              <p className="lg:text-xl md:text-lg">Inventory Accuracy in SLA</p>
+              <p className="text-lg">Hours inbound to put away</p>
             </div>
           </div>
           {/* 4 */}
@@ -53,9 +53,9 @@ function StatsSection() {
             <span className="h-full inline-block w-2 bg-primary rounded-sm"></span>
             <div>
               <h2 className="lg:text-4xl md:text-3xl text-2xl  font-bold text-primary">
-                99.5%
+                100%
               </h2>
-              <p className="lg:text-xl md:text-lg">Inventory Accuracy in SLA</p>
+              <p className="text-lg">Returns processed within 48 hours</p>
             </div>
           </div>
         </div>

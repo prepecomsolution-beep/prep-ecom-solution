@@ -15,7 +15,7 @@ function ServiceSection() {
           </div>
           <div>
             <img
-              src="/images/home.webp"
+              src="/images/1.webp"
               alt="service image"
               className="rounded-lg"
             />
@@ -35,7 +35,7 @@ function ServiceSection() {
           </div>
           <div>
             <img
-              src="/images/home.webp"
+              src="/images/2.webp"
               alt="service image"
               className="rounded-lg"
             />

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Herosection() {
   return (
     <section
@@ -21,7 +23,9 @@ function Herosection() {
           solutions.
         </h2>
         <form>
-          <button className="primaryBtn">Request A Quote</button>
+          <Link href={"/contact"} className="primaryBtn">
+            Get your Warehouse
+          </Link>
         </form>
       </div>
     </section>

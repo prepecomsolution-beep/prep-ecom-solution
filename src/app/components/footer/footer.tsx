@@ -12,10 +12,13 @@ function Footer() {
     <div className="bg-primary md:px-4 px-4 py-12 pb-4 text-white grid gap-14 mt-22">
       <footer className="max-w-7xl mx-auto sm:flex grid gap-8 font-semibold w-full">
         <div className="sm:max-w-xs w-full grid gap-2 items-start content-start">
-          <h1 className="text-2xl font-bold capitalize">{default_info.name}</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed!
-          </p>
+          <img
+            src="/images/logo.png"
+            alt="prep ecom solution"
+            className="w-40"
+          />
+          {/* <h1 className="text-2xl font-bold capitalize">{default_info.name}</h1> */}
+          <p className="font-semibold capitalize text-lg">we prep you grow</p>
           <div className="flex gap-2 w-full">
             <Instagram className="size-5 hover:scale-95 cursor-pointer transition-all translate-0.5 text-primary bg-white box-content p-1.5 rounded-sm" />
             <Facebook className="size-5 hover:scale-95 cursor-pointer transition-all translate-0.5 text-primary bg-white box-content p-1.5 rounded-sm" />
@@ -39,7 +42,7 @@ function Footer() {
             <h2 className="text-2xl font-bold mb-2">Solutions</h2>
             {services_menu.map((each) => (
               <Link
-                key={each.link}
+                key={each.name}
                 href={`${each.link}`}
                 className="capitalize hover:underline"
               >

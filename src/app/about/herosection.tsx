@@ -13,9 +13,11 @@ function Herosection() {
           About us
         </h1>
         <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">
-          QuickBox is your premier 3PL fulfillment and logistics management
-          partner, delivering top-tier omnichannel operations to your customers.
-          Reach 95% of the U.S. with cost-effective dynamic shipping solutions.
+          Solutions designed to drive up to 20% in postage savings, for
+          cost-effective delivery across the continental U.S. within two days
+          with flexible, blended carrier ground transportation options. We offer
+          UPS Next Day Air for time-sensitive deliveries, with fulfillment
+          before the cutoff.
         </h2>
       </div>
     </section>
