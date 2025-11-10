@@ -118,7 +118,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background h-full overflow-hidden text-foreground;
+    @apply bg-background h-full overflow-x-hidden text-foreground;
   }
 }
 
