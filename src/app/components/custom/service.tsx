@@ -8,7 +8,7 @@ function ServiceSection() {
               Prep Ecom Solution
             </h1>
             A specialized third-party logistics 3PL company dedicated to
-            providing end-to-end e-commerce fulfilment services for online
+            providing end-to-end e-commerce fulfillment services for online
             sellers. We help businesses of all sizes streamline their operations
             by taking care of inventory storage, product preparation, packing,
             and shipping with precision and reliability.
@@ -24,9 +24,9 @@ function ServiceSection() {
         <div className="grid lg:grid-cols-2 md:gap-4 gap-2 p-2 rounded-sm">
           <div className="md:text-xl sm:text-lg grid content-center items-center">
             <h1 className="lg:text-4xl md:text-2xl text-xl text-primary mb-4 font-bold">
-              Fulfilment
+              Fulfillment
             </h1>
-            We understand that timely and accurate order fulfilment is critical
+            We understand that timely and accurate order fulfillment is critical
             to building customer trust and growing an online business. That's
             why we offer comprehensive logistics solutions tailored to the needs
             of e-commerce sellers, from startups to large-scale brands. Our team

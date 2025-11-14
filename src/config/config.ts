@@ -10,8 +10,8 @@ const primary_menu = [
 ];
 
 const services_menu = [
-  { name: "3PL logistic", link: "/" },
-  { name: "Inventory Management", link: "/" },
+  { name: "3PL logistic", link: "/services" },
+  { name: "Inventory Management", link: "/services" },
 ];
 
 const secondary_menu = [

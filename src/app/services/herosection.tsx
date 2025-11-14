@@ -13,9 +13,10 @@ function Herosection() {
           Our Services
         </h1>
         <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">
-          QuickBox is your premier 3PL fulfillment and logistics management
-          partner, delivering top-tier omnichannel operations to your customers.
-          Reach 95% of the U.S. with cost-effective dynamic shipping solutions.
+          Prep Ecom Solution is your premier 3PL fulfillment and logistics
+          management partner, delivering top-tier omnichannel operations to your
+          customers. Reach 95% of the U.S. with cost-effective dynamic shipping
+          solutions.
         </h2>
       </div>
     </section>

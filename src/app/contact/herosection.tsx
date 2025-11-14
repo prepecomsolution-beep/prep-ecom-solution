@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone, X } from "lucide-react";
+import Link from "next/link";
 
 function Herosection() {
   return (
@@ -20,28 +21,42 @@ function Herosection() {
           Reach 95% of the U.S. with cost-effective dynamic shipping solutions.
         </h2>
       </div>
-      <div className="left-0 bottom-0 w-full bg-accent/20 backdrop-blur-2xl z-10 shadow-2xl  rounded-sm">
-        <div className="max-w-7xl w-full bg mx-auto flex gap-4 justify-center flex-wrap p-8 text-accent font-bold">
-          <div className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80">
+      <div className="left-0 bottom-0 w-full bg-accent/10 backdrop-blur-2xl z-10 shadow-2xl  rounded-sm">
+        <div className="max-w-7xl w-full bg mx-auto flex gap-4 justify-center flex-wrap p-8 text-accent font-semibold">
+          <Link
+            href={"mailto:support@prepecomsolution.com"}
+            target="_blank"
+            className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
+          >
             <div className="flex justify-center">
               <Mail className="text-primary size-8" />
             </div>
             <div className="text-center">support@prepecomsolution.com</div>
-          </div>
-          <div className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80">
+          </Link>
+          <Link
+            href={"tel:+13464819540"}
+            target="_blank"
+            className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
+          >
             <div className="flex justify-center">
               <Phone className="text-primary size-8" />
             </div>
             <div className="text-center">+1 346 481-9540</div>
-          </div>
-          <div className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80">
+          </Link>
+          <Link
+            href={
+              "https://www.google.com/maps?ll=29.558793,-95.770522&z=16&t=m&hl=en&gl=US&mapclient=embed&q=5601+Avenue+I+Rosenberg,+TX+77471+USA"
+            }
+            target="_blank"
+            className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
+          >
             <div className="flex justify-center">
               <MapPin className="text-primary size-8" />
             </div>
             <div className="text-center w-[70%] mx-auto">
               5601 Avenue I 5601 Avenue I, Rosenberg, TX 77471, USA
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

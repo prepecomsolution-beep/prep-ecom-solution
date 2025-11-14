@@ -15,9 +15,7 @@ function Herosection() {
         <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">
           Solutions designed to drive up to 20% in postage savings, for
           cost-effective delivery across the continental U.S. within two days
-          with flexible, blended carrier ground transportation options. We offer
-          UPS Next Day Air for time-sensitive deliveries, with fulfillment
-          before the cutoff.
+          with flexible, blended carrier ground transportation options.
         </h2>
       </div>
     </section>
