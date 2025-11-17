@@ -15,7 +15,7 @@ export default function Founder() {
       <div className="text-lg grid gap-2 content-center">
         <h2 className="font-bold text-primary text-xl">Ahsan Shahzad Shah</h2>
         <p>
-          He is the founder of Prep Ecom Solution, a leading provider of
+          Founder of Prep Ecom Solution, a leading provider of
           professional e-commerce prep, packaging, and logistics services. With
           expertise in prep, e-commerce fulfillment, and end-to-end logistics
           management, he helps online sellers streamline operations, reduce
