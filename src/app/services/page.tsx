@@ -1,5 +1,6 @@
 import ServiceSection from "../components/custom/service";
 import Herosection from "./herosection";
+import InventorySourcing from "./inventory-sourcing";
 import ServiceBox from "./services";
 
 function Page() {
@@ -8,6 +9,8 @@ function Page() {
       <Herosection />
 
       <ServiceBox />
+      <hr className="my-4 border-t-2 border-gray-300" />
+      <InventorySourcing />
       <hr className="my-4 border-t-2 border-gray-300" />
       <ServiceSection />
     </div>
