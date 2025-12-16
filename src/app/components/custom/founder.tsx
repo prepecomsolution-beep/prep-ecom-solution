@@ -19,7 +19,7 @@ export default function Founder() {
           e-commerce prep, packaging, and logistics services. With expertise in
           prep, e-commerce fulfillment, and end-to-end logistics management, he
           helps online sellers streamline operations, reduce errors, and scale
-          their businesses with confidence. Ahsan's commitment to high-quality
+          their businesses with confidence. Murtaza's commitment to high-quality
           prep services and efficient workflows has positioned Prep Ecom
           Solution as a trusted partner for e-commerce brands worldwide.
         </p>

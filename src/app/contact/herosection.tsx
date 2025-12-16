@@ -34,14 +34,14 @@ function Herosection() {
             <div className="text-center">support@prepecomsolution.com</div>
           </Link>
           <Link
-            href={"tel:+13464819540"}
+            href={"tel:+13468594022"}
             target="_blank"
             className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
           >
             <div className="flex justify-center">
               <Phone className="text-primary size-8" />
             </div>
-            <div className="text-center">+1 346 481-9540</div>
+            <div className="text-center">+1 346 859 4022</div>
           </Link>
           <Link
             href={
