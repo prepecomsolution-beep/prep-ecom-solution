@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, X } from "lucide-react";
+import { Mail, MapPin, MessageCircleMore } from "lucide-react";
 import Link from "next/link";
 
 function Herosection() {
@@ -34,12 +34,12 @@ function Herosection() {
             <div className="text-center">support@prepecomsolution.com</div>
           </Link>
           <Link
-            href={"tel:+13468594022"}
+            href={"https://api.whatsapp.com/message/WVGLES4YCHFXB1"}
             target="_blank"
             className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
           >
             <div className="flex justify-center">
-              <Phone className="text-primary size-8" />
+              <MessageCircleMore className="text-primary size-8" />
             </div>
             <div className="text-center">+1 346 859 4022</div>
           </Link>
