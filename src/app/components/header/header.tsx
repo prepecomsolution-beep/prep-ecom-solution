@@ -20,9 +20,11 @@ function Header() {
 
       <div className="max-w-7xl mx-auto">
         <header className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">
-            Prep Ecom Solution
-          </h1>
+          <Link href={"/"}>
+            <h1 className="text-2xl font-bold text-primary">
+              Prep Ecom Solution
+            </h1>
+          </Link>
           {/* Mobile menu trigger */}
           {isMenuHide ? (
             <button className="md:hidden" onClick={() => setIsMenuHide(false)}>

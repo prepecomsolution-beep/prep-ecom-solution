@@ -5,7 +5,7 @@ export default function Founder() {
     <div className="grid md:grid-cols-2 gap-4 max-md:gap-8 max-w-7xl mx-auto w-full p-4">
       <div className="flex justify-center items-center">
         <Image
-          src={"/images/founder.jpeg"}
+          src={"/images/founder.png"}
           height={500}
           width={500}
           alt="Founder Profile"
