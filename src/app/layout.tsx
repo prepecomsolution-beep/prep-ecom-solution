@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,8 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Prep Ecom Solution",
-  description:
-    "Fast, Accurate, & Scalable 3PL Fulfillment 7 Days a Week For Your Brand",
+  description: "Fast, Accurate, & Scalable 3PL Fulfillment 7 Days a Week For Your Brand",
 };
 
 export default function RootLayout({
@@ -28,9 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7NSYWRXGRL" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7NSYWRXGRL');`}
+        </Script>
+
         <Header />
         <LenisProvider>{children}</LenisProvider>
         <Footer />
