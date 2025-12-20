@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Prep Ecom Solution",
   description: "Fast, Accurate, & Scalable 3PL Fulfillment 7 Days a Week For Your Brand",
+  verification: {
+    google: "DiHvV1pMy2Pmq2xJQxirF9D5qGzMz0wUkySafYIoPYE",
+  },
 };
 
 export default function RootLayout({
@@ -28,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <meta name="google-site-verification" content="DiHvV1pMy2Pmq2xJQxirF9D5qGzMz0wUkySafYIoPYE" /> */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-TBK9RJDNKF" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
