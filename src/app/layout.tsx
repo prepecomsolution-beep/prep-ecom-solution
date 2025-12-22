@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   verification: {
     google: "DiHvV1pMy2Pmq2xJQxirF9D5qGzMz0wUkySafYIoPYE",
   },
+  other: {
+    "p:domain_verify": "5aaa2b2544edf671d6a2a1978b17eec1",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <meta name="p:domain_verify" content="5aaa2b2544edf671d6a2a1978b17eec1" /> */}
       {/* <meta name="google-site-verification" content="DiHvV1pMy2Pmq2xJQxirF9D5qGzMz0wUkySafYIoPYE" /> */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-TBK9RJDNKF" strategy="afterInteractive" />
