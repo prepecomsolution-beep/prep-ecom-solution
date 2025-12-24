@@ -12,12 +12,9 @@ function Herosection() {
 
       {/* Content */}
       <div className="relative z-10 px-4 grid gap-4 text-white max-w-4xl w-full text-center wrap-break-word mx-auto pt-40">
-        <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold text-primary uppercase">
-          Contact us
-        </h1>
+        <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold text-primary uppercase">Contact us</h1>
         <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">
-          Prep Ecom is your premier 3PL fulfillment and logistics management
-          partner, delivering top-tier omnichannel operations to your customers.
+          Prep Ecom is your premier 3PL fulfillment and logistics management partner, delivering top-tier omnichannel operations to your customers.
           Reach 95% of the U.S. with cost-effective dynamic shipping solutions.
         </h2>
       </div>
@@ -44,18 +41,14 @@ function Herosection() {
             <div className="text-center">+1 346 859 4022</div>
           </Link>
           <Link
-            href={
-              "https://www.google.com/maps?ll=29.558793,-95.770522&z=16&t=m&hl=en&gl=US&mapclient=embed&q=5601+Avenue+I+Rosenberg,+TX+77471+USA"
-            }
+            href={"https://www.google.com/maps?ll=29.558793,-95.770522&z=16&t=m&hl=en&gl=US&mapclient=embed&q=5601+Avenue+I+Rosenberg,+TX+77471+USA"}
             target="_blank"
             className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
           >
             <div className="flex justify-center">
               <MapPin className="text-primary size-8" />
             </div>
-            <div className="text-center w-[70%] mx-auto">
-              5601 Avenue I 5601 Avenue I, Rosenberg, TX 77471, USA
-            </div>
+            <div className="text-center w-[70%] mx-auto">5601 Avenue I 5601 Avenue I, Rosenberg, TX 77471, USA</div>
           </Link>
         </div>
       </div>
