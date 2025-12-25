@@ -31,7 +31,7 @@ function Herosection() {
             <div className="text-center">support@prepecomsolution.com</div>
           </Link>
           <Link
-            href={"https://api.whatsapp.com/message/WVGLES4YCHFXB1"}
+            href={"https://wa.me/13468594022"}
             target="_blank"
             className="border border-accent p-4 rounded-sm grid gap-1 justify-center items-center min-w-80 hover:bg-accent hover:text-foreground transition-all ease-in-out"
           >
