@@ -1,3 +1,5 @@
+import { NextIntlClientProvider } from "next-intl";
+
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -79,9 +81,11 @@ export default function RootLayout({
           gtag('config', 'G-TBK9RJDNKF');`}
         </Script>
 
-        <Header />
-        <LenisProvider>{children}</LenisProvider>
-        <Footer />
+        <NextIntlClientProvider>
+          <Header />
+          <LenisProvider>{children}</LenisProvider>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Founder() {
+  const author = useTranslations("global.author");
+
   return (
     <div className="grid md:grid-cols-2 gap-4 max-md:gap-8 max-w-7xl mx-auto w-full p-4">
       <div className="flex justify-center items-center">
@@ -14,15 +17,7 @@ export default function Founder() {
       </div>
       <div className="text-lg grid gap-2 content-center">
         <h2 className="font-bold text-primary text-xl">Murtaza Adnan</h2>
-        <p>
-          Founder of Prep Ecom Solution, a leading provider of professional
-          e-commerce prep, packaging, and logistics services. With expertise in
-          prep, e-commerce fulfillment, and end-to-end logistics management, he
-          helps online sellers streamline operations, reduce errors, and scale
-          their businesses with confidence. Murtaza's commitment to high-quality
-          prep services and efficient workflows has positioned Prep Ecom
-          Solution as a trusted partner for e-commerce brands worldwide.
-        </p>
+        <p>{author("about")}</p>
       </div>
     </div>
   );

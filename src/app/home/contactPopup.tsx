@@ -3,14 +3,17 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 
 export default function ContactButton() {
   const [isShow, setIsShow] = useState(false);
+  const herosection = useTranslations("home.herosection");
+
   return (
     <div className="flex justify-center items-center">
       <button onClick={() => setIsShow((prev) => !prev)} className="primaryBtn">
-        Contact
+        {herosection("button.contact")}
       </button>
       {isShow ? <PopupForm setIsShow={setIsShow} /> : null}
     </div>

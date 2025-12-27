@@ -1,9 +1,4 @@
-import {
-  default_info,
-  primary_menu,
-  secondary_menu,
-  services_menu,
-} from "@/config/config";
+import { default_info, primary_menu, secondary_menu, services_menu } from "@/app/config/config";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { TikTok_Sans } from "next/font/google";
 import Link from "next/link";
@@ -13,25 +8,15 @@ function Footer() {
     <div className="bg-primary md:px-4 px-4 py-12 pb-4 text-white grid gap-14 mt-22">
       <footer className="max-w-7xl mx-auto sm:flex grid gap-8 font-semibold w-full">
         <div className="sm:max-w-xs w-full grid gap-2 items-start content-start">
-          <img
-            src="/images/logo.png"
-            alt="prep ecom solution"
-            className="w-40"
-          />
+          <img src="/images/logo.png" alt="prep ecom solution" className="w-40" />
           {/* <h1 className="text-2xl font-bold capitalize">{default_info.name}</h1> */}
           <p className="font-semibold capitalize text-lg">we prep you grow</p>
           <div className="flex gap-2 w-full">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/prepecomsolution/"
-            >
+            <a target="_blank" href="https://www.instagram.com/prepecomsolution/">
               <Instagram className="size-5 hover:scale-95 cursor-pointer transition-all translate-0.5 text-primary bg-white box-content p-1.5 rounded-sm" />
             </a>
 
-            <a
-              target="_blank"
-              href="https://www.facebook.com/prepecomsolution/"
-            >
+            <a target="_blank" href="https://www.facebook.com/prepecomsolution/">
               <svg
                 className="size-5 hover:scale-95 cursor-pointer transition-all translate-0.5 text-primary bg-white fill-primary box-content p-1.5 rounded-sm"
                 viewBox="0 0 640 640"
@@ -40,10 +25,7 @@ function Footer() {
               </svg>
             </a>
 
-            <a
-              target="_blank"
-              href="https://www.tiktok.com/@prepecomsolution.com"
-            >
+            <a target="_blank" href="https://www.tiktok.com/@prepecomsolution.com">
               <svg
                 className="size-5 hover:scale-95 cursor-pointer transition-all translate-0.5 text-primary bg-white fill-primary box-content p-1.5 rounded-sm"
                 viewBox="0 0 640 640"
@@ -56,36 +38,24 @@ function Footer() {
         <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 w-full">
           <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Company</h2>
-            {primary_menu.map((each) => (
-              <Link
-                key={each.link}
-                href={`${each.link}`}
-                className="capitalize hover:underline"
-              >
+            {primary_menu().map((each) => (
+              <Link key={each.link} href={`${each.link}`} className="capitalize hover:underline">
                 {each.name}
               </Link>
             ))}
           </nav>
           <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Solutions</h2>
-            {services_menu.map((each) => (
-              <Link
-                key={each.name}
-                href={`${each.link}`}
-                className="capitalize hover:underline"
-              >
+            {services_menu().map((each) => (
+              <Link key={each.name} href={`${each.link}`} className="capitalize hover:underline">
                 {each.name}
               </Link>
             ))}
           </nav>
           <nav className="grid gap-1 content-start">
             <h2 className="text-2xl font-bold mb-2">Policies</h2>
-            {secondary_menu.map((each) => (
-              <Link
-                key={each.link}
-                href={`${each.link}`}
-                className="capitalize hover:underline"
-              >
+            {secondary_menu().map((each) => (
+              <Link key={each.link} href={`${each.link}`} className="capitalize hover:underline">
                 {each.name}
               </Link>
             ))}
@@ -94,9 +64,8 @@ function Footer() {
       </footer>
       <section className="max-w-4xl w-full mx-auto border-t border-white text-center pt-4">
         <p className="text-sm  font-semibold">
-          © {new Date().getFullYear().toString()}{" "}
-          <span className="capitalize">{default_info.name}</span> Fulfillment |
-          All Rights Reserved | Terms of Service
+          © {new Date().getFullYear().toString()} <span className="capitalize">{default_info.name}</span> Fulfillment | All Rights Reserved | Terms of
+          Service
         </p>
       </section>
     </div>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import HeaderScrollHandler from "./header_scroll_handler";
 import { Dispatch, SetStateAction, useState } from "react";
-import { primary_menu } from "@/config/config";
+import { primary_menu } from "@/app/config/config";
 
 function Header() {
   const [scrolled, setScroll] = useState(0);
@@ -11,9 +11,7 @@ function Header() {
   return (
     <div
       className={`p-4 w-full fixed top-0 left-0 z-50 transition-all max-md:bg-white max-md:text-black ${
-        scrolled > 100
-          ? "bg-white text-black shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
-          : "text-white"
+        scrolled > 100 ? "bg-white text-black shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]" : "text-white"
       }`}
     >
       <HeaderScrollHandler dispatch={setScroll} />
@@ -21,9 +19,7 @@ function Header() {
       <div className="max-w-7xl mx-auto">
         <header className="flex justify-between items-center">
           <Link href={"/"}>
-            <h1 className="text-2xl font-bold text-primary">
-              Prep Ecom Solution
-            </h1>
+            <h1 className="text-2xl font-bold text-primary">Prep Ecom Solution</h1>
           </Link>
           {/* Mobile menu trigger */}
           {isMenuHide ? (
@@ -76,12 +72,8 @@ function Header() {
 function DesktopNav() {
   return (
     <nav className="flex gap-4 max-md:hidden">
-      {primary_menu.map((each) => (
-        <Link
-          key={each.link}
-          href={each.link}
-          className="p-2 capitalize font-semibold hover:text-primary transition-all"
-        >
+      {primary_menu().map((each) => (
+        <Link key={each.link} href={each.link} className="p-2 capitalize font-semibold hover:text-primary transition-all">
           {each.name}
         </Link>
       ))}
@@ -89,21 +81,11 @@ function DesktopNav() {
   );
 }
 
-function MobileNav({
-  isMenuHide,
-  setIsMenuHide,
-}: {
-  isMenuHide: boolean;
-  setIsMenuHide: Dispatch<SetStateAction<boolean>>;
-}) {
+function MobileNav({ isMenuHide, setIsMenuHide }: { isMenuHide: boolean; setIsMenuHide: Dispatch<SetStateAction<boolean>> }) {
   return (
-    <nav
-      className={`grid gap-4 md:hidden absolute top-full left-0 w-full transition-all text-black p-2 ${
-        isMenuHide ? "left-[200%]" : "left-0"
-      }`}
-    >
+    <nav className={`grid gap-4 md:hidden absolute top-full left-0 w-full transition-all text-black p-2 ${isMenuHide ? "left-[200%]" : "left-0"}`}>
       <div className="w-full bg-white/80 backdrop-blur-xl box shadow-[0_0px_6px_-1px_rgba(0,0,0,0.3)] rounded-md p-2 grid">
-        {primary_menu.map((each) => (
+        {primary_menu().map((each) => (
           <Link
             onClick={() => setIsMenuHide(true)}
             key={each.link}

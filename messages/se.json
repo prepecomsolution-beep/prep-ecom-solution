@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "inicio",
+    "about": "nosotros",
+    "service": "servicios",
+    "contact": "contacto"
+  },
+  "home": {
+    "herosection": {
+      "title": "Cumplimiento 3PL rápido, preciso y escalable los 7 días de la semana para tu marca",
+      "description": "Prep Ecom Solution es tu socio principal en cumplimiento 3PL y gestión logística, ofreciendo operaciones omnicanal de primer nivel a tus clientes. Llega al 95% de EE. UU. con soluciones de envío dinámicas y rentables.",
+      "button": {
+        "contact": "contacto",
+        "whatsapp": "whatsapp"
+      }
+    },
+    "accuracy": {
+      "title": "Precisión, Velocidad y Excelencia Operativa",
+      "one": "Precisión de inventario dentro del SLA",
+      "two": "Pedidos procesados en menos de 24 horas",
+      "three": "Capacidad de exportación DDU/DDP a países",
+      "four": "Horas desde recepción hasta almacenamiento",
+      "five": "Devoluciones procesadas en menos de 48 horas"
+    }
+  },
+  "about": {
+    "herosection": {
+      "title": "Sobre nosotros",
+      "description": "Soluciones diseñadas para generar hasta un 20% de ahorro en envíos, con entregas rentables en todo el territorio continental de EE. UU. en dos días, mediante opciones flexibles de transporte terrestre combinado."
+    },
+    "brief": {
+      "title": "Resumen",
+      "one": "En Prep Ecom Solution simplificamos la logística mediante soluciones confiables, rentables y escalables de almacenamiento y logística. Desde la gestión de inventario y transporte hasta la logística de eventos y la coordinación en sitio, ofrecemos soporte integral para que tus productos y operaciones se muevan de forma eficiente.",
+      "two": "Como proveedor líder de servicios logísticos, atendemos con orgullo a empresas (B2B) y clientes individuales (B2C) en múltiples industrias. Ya sea que necesites un socio de almacenamiento a largo plazo, apoyo en distribución o un plan logístico completo para tu próximo gran evento, contamos con la experiencia y la infraestructura para hacerlo realidad, a tiempo y dentro del presupuesto.",
+      "three": "Nuestro equipo de profesionales en logística combina años de experiencia en gestión de la cadena de suministro, tecnología moderna de seguimiento y un enfoque centrado en el cliente. Priorizamos la velocidad, la precisión y la transparencia, ofreciendo opciones flexibles de almacenamiento, seguimiento en tiempo real y soporte dedicado en cada etapa.",
+      "four": "En Prep Ecom Solution vamos más allá del transporte: construimos relaciones duraderas. Nuestra misión es hacer la logística simple, inteligente y sin estrés, para que puedas enfocarte en lo más importante: hacer crecer tu negocio y ofrecer grandes experiencias.",
+      "five": "Prep Ecom Solution: Nosotros preparamos, tú creces. Tu solución todo en uno para almacenamiento, distribución y gestión logística."
+    }
+  },
+  "service": {
+    "herosection": {
+      "title": "Nuestros Servicios",
+      "description": "Prep Ecom Solution es tu socio principal en cumplimiento 3PL y gestión logística, ofreciendo operaciones omnicanal de primer nivel a tus clientes. Llega al 95% de EE. UU. con soluciones de envío dinámicas y rentables."
+    },
+    "briefService": {
+      "title": "Resumen de Servicios",
+      "paragraph": "Construiremos tu solución de envío ideal combinando equipos expertos.",
+      "one": {
+        "title": "Gestión de Inventario",
+        "subTitle": "Almacenamiento seguro, organizado y rastreable",
+        "paragraph": "Ofrecemos soluciones de almacenamiento seguras y bien organizadas para tus productos, garantizando fácil acceso y seguimiento preciso del stock. Con actualizaciones de inventario en tiempo real, siempre sabrás tus niveles de existencias. Nuestras soluciones están diseñadas para Amazon FBA, Walmart, TikTok Shop, Shopify y otras plataformas de comercio electrónico."
+      },
+      "two": {
+        "title": "Preparación de Productos y FBA Prep",
+        "subTitle": "Preparación precisa para un cumplimiento sin problemas",
+        "paragraph": "Nuestro equipo se encarga de todos los aspectos de la preparación del producto, incluyendo etiquetado, agrupado, kitting e inspecciones de calidad. Aseguramos que cada producto cumpla con los estándares de cada plataforma, reduciendo el riesgo de penalizaciones o retrasos."
+      },
+      "three": {
+        "title": "Cumplimiento de Pedidos",
+        "subTitle": "Envíos rápidos, confiables y precisos",
+        "paragraph": "Desde el picking y packing hasta el envío, gestionamos tus pedidos con rapidez y precisión. Nuestro proceso garantiza que los clientes reciban el producto correcto, a tiempo y siempre."
+      },
+      "four": {
+        "title": "Devoluciones y Logística Inversa",
+        "subTitle": "Gestión de devoluciones sin complicaciones",
+        "paragraph": "Gestionar devoluciones puede ser complejo, pero nuestro equipo lo hace sencillo. Procesamos devoluciones, inspeccionamos productos y actualizamos el inventario de manera eficiente."
+      },
+      "five": {
+        "title": "Experiencia Multiplataforma en E-Commerce",
+        "subTitle": "Soluciones de cumplimiento para cada tienda online",
+        "paragraph": "Nos especializamos en cumplimiento para Amazon FBA, Walmart Marketplace, TikTok Shop y Shopify. Nuestra experiencia garantiza cumplimiento normativo, integración fluida y un proceso logístico completo."
+      },
+      "six": {
+        "title": "Soluciones Logísticas Escalables",
+        "subTitle": "Haz crecer tu negocio sin límites",
+        "paragraph": "Ya seas una startup o una gran marca de e-commerce, nuestras soluciones 3PL crecen contigo. Desde picos estacionales hasta expansiones rápidas, mantenemos tus operaciones eficientes y rentables."
+      }
+    },
+    "Inventory": {
+      "title": "Soluciones de Inventario y Abastecimiento para E-Commerce",
+      "paragraph": "En Prep Ecom Solution no solo preparamos productos, también suministramos inventario de alta calidad y alta demanda para ayudar a los vendedores a escalar más rápido.",
+      "one": {
+        "title": "Abastecimiento Retail de las Principales Tiendas de EE. UU.",
+        "paragraph": "Te ayudamos a obtener productos directamente de grandes cadenas minoristas de EE. UU. como Walmart, Sam's Club, Target y otros minoristas aprobados."
+      },
+      "two": {
+        "title": "Inventario Exclusivo Disponible en Stock",
+        "paragraph": "También ofrecemos inventario interno seleccionado, listo para compra inmediata, preparación y envío."
+      },
+      "three": {
+        "title": "¿Por qué elegir nuestros servicios de abastecimiento?",
+        "paragraph": {
+          "one": "Acceso a productos rentables y nuevos",
+          "two": "Reposiciones constantes de minoristas confiables",
+          "three": "Procesamiento rápido directo a Amazon FBA o tu almacén",
+          "four": "Sin necesidad de gestionar múltiples proveedores",
+          "five": "Opciones confiables para escalar tu negocio"
+        }
+      },
+      "four": {
+        "title": "Crece más rápido con inventario confiable de EE. UU.",
+        "paragraph": "Ya seas un vendedor experimentado o estés comenzando, nuestro servicio de abastecimiento te brinda velocidad, confiabilidad y crecimiento continuo."
+      }
+    }
+  },
+  "contact": {
+    "herosection": {
+      "title": "Contáctanos",
+      "description": "Prep Ecom es tu socio principal en cumplimiento 3PL y gestión logística, ofreciendo operaciones omnicanal de primer nivel a tus clientes."
+    }
+  },
+  "global": {
+    "services": {
+      "one": {
+        "title": "Prep Ecom Solution",
+        "paragraph": "Empresa especializada en logística 3PL dedicada a ofrecer servicios completos de cumplimiento para comercio electrónico."
+      },
+      "two": {
+        "title": "Cumplimiento",
+        "paragraph": "Entendemos que el cumplimiento preciso y puntual es clave para generar confianza y hacer crecer un negocio online."
+      }
+    },
+    "whychooseus": {
+      "title": "Por qué elegirnos",
+      "paragraph": "Construimos tu solución de envío ideal combinando equipos expertos.",
+      "one": {
+        "title": "Gestión Eficiente de la Cadena de Suministro",
+        "subTitle": "Operaciones fluidas, coordinadas y puntuales",
+        "paragraph": "Los servicios logísticos optimizan el movimiento de mercancías desde proveedores hasta clientes."
+      },
+      "two": {
+        "title": "Reducción de Costos",
+        "subTitle": "Optimiza operaciones y maximiza ahorros",
+        "paragraph": "La mejora de rutas, procesos de almacén y control de inventario reduce costos operativos."
+      },
+      "three": {
+        "title": "Mayor Satisfacción del Cliente",
+        "subTitle": "Entregas rápidas, transparentes y confiables",
+        "paragraph": "Las entregas rápidas aumentan la satisfacción, la confianza en la marca y la recompra."
+      },
+      "four": {
+        "title": "Escalabilidad y Flexibilidad",
+        "subTitle": "Logística que crece con tu negocio",
+        "paragraph": "La logística escalable permite adaptarse al crecimiento y a picos de demanda."
+      },
+      "five": {
+        "title": "Manejo Experto y Gestión de Riesgos",
+        "subTitle": "Cuidado profesional y operaciones seguras",
+        "paragraph": "Los proveedores expertos garantizan manejo seguro, almacenamiento adecuado y transporte confiable."
+      }
+    },
+    "author": {
+      "about": "Fundador de Prep Ecom Solution, proveedor líder de servicios profesionales de preparación, empaque y logística para comercio electrónico. Con amplia experiencia en cumplimiento y gestión logística integral, ayuda a los vendedores online a optimizar operaciones y escalar con confianza."
+    }
+  }
+}

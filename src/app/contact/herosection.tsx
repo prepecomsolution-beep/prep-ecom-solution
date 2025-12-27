@@ -1,7 +1,10 @@
 import { Mail, MapPin, MessageCircleMore } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 function Herosection() {
+  const herosection = useTranslations("contact.herosection");
+
   return (
     <section
       className="relative min-h-screen h-auto w-full bg-cover bg-center grid gap-20 content-center justify-center items-center"
@@ -12,11 +15,8 @@ function Herosection() {
 
       {/* Content */}
       <div className="relative z-10 px-4 grid gap-4 text-white max-w-4xl w-full text-center wrap-break-word mx-auto pt-40">
-        <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold text-primary uppercase">Contact us</h1>
-        <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">
-          Prep Ecom is your premier 3PL fulfillment and logistics management partner, delivering top-tier omnichannel operations to your customers.
-          Reach 95% of the U.S. with cost-effective dynamic shipping solutions.
-        </h2>
+        <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold text-primary uppercase">{herosection("title")}</h1>
+        <h2 className="lg:text-2xl md:text-xl max-md:w-[90%] mx-auto">{herosection("description")}</h2>
       </div>
       <div className="left-0 bottom-0 w-full bg-accent/10 backdrop-blur-2xl z-10 shadow-2xl  rounded-sm">
         <div className="max-w-7xl w-full bg mx-auto flex gap-4 justify-center flex-wrap p-8 text-accent font-semibold">
