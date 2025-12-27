@@ -4,6 +4,7 @@ import Link from "next/link";
 import HeaderScrollHandler from "./header_scroll_handler";
 import { Dispatch, SetStateAction, useState } from "react";
 import { primary_menu } from "@/app/config/config";
+import LanguageSelector from "../custom/languagesSelector";
 
 function Header() {
   const [scrolled, setScroll] = useState(0);
@@ -22,44 +23,47 @@ function Header() {
             <h1 className="text-2xl font-bold text-primary">Prep Ecom Solution</h1>
           </Link>
           {/* Mobile menu trigger */}
-          {isMenuHide ? (
-            <button className="md:hidden" onClick={() => setIsMenuHide(false)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="size-6 box-content p-1 rounded-sm bg-primary text-white"
-              >
-                <path d="M4 5h16" />
-                <path d="M4 12h16" />
-                <path d="M4 19h16" />
-              </svg>
-            </button>
-          ) : (
-            <button className="md:hidden" onClick={() => setIsMenuHide(true)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="size-6 box-content p-1 rounded-sm bg-red-500 text-white"
-              >
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
-            </button>
-          )}
+          <div className="md:hidden flex gap-2">
+            <LanguageSelector />
+            {isMenuHide ? (
+              <button onClick={() => setIsMenuHide(false)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="size-6 box-content p-1 rounded-sm bg-primary text-white"
+                >
+                  <path d="M4 5h16" />
+                  <path d="M4 12h16" />
+                  <path d="M4 19h16" />
+                </svg>
+              </button>
+            ) : (
+              <button onClick={() => setIsMenuHide(true)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="size-6 box-content p-1 rounded-sm bg-red-500 text-white"
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
           {/* Desktop */}
           <DesktopNav />
           <MobileNav isMenuHide={isMenuHide} setIsMenuHide={setIsMenuHide} />
@@ -77,6 +81,7 @@ function DesktopNav() {
           {each.name}
         </Link>
       ))}
+      <LanguageSelector />
     </nav>
   );
 }
