@@ -1,53 +1,14 @@
-// "use client";
-
-// import CookieSetter from "@/utils/cookieSetter";
-// import { useEffect, useRef, useState } from "react";
-// import { useRouter } from "next/navigation";
-
-// export default function LanguageSelector() {
-//   const langSelector = useRef<HTMLSelectElement>(null);
-//   const [selectedLang, setSelectedLang] = useState<"spanish" | "english">("english");
-//   const router = useRouter();
-
-//   useEffect(() => {
-//     cookieStore.get("lang").then((e) => {
-//       const val = e?.value as "english" | "spanish";
-//       setSelectedLang(val);
-//     });
-//   }, []);
-
-//   function changeLanguage() {
-//     const selectedLang = langSelector.current?.value as "english" | "spanish";
-
-//     if (!selectedLang) return;
-
-//     CookieSetter({ key: "lang", value: selectedLang });
-//     router.refresh();
-//   }
-
-//   return (
-//     <div className="absolute right-10 top-0 z-200 bg-amber-400">
-//       <select ref={langSelector} id="langSelector" onChange={changeLanguage} defaultValue="english">
-//         <option selected={selectedLang === "english"} defaultValue="english">
-//           English
-//         </option>
-//         <option selected={selectedLang === "spanish"} defaultValue="spanish">
-//           Spanish
-//         </option>
-//       </select>
-//     </div>
-//   );
-// }
 "use client";
 
 import CookieSetter from "@/utils/cookieSetter";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { LangType } from "@/i18n/request";
 
-type Lang = "english" | "spanish";
+export const LangVar = ["english", "spanish", "chines", "bangali", "urdu"] as LangType[];
 
 export default function LanguageSelector() {
-  const [selectedLang, setSelectedLang] = useState<Lang>("english");
+  const [selectedLang, setSelectedLang] = useState<LangType>("english");
   const router = useRouter();
 
   // Read cookie on client
@@ -55,13 +16,13 @@ export default function LanguageSelector() {
     const match = document.cookie.split("; ").find((row) => row.startsWith("lang="));
 
     if (match) {
-      const value = match.split("=")[1] as Lang;
+      const value = match.split("=")[1] as LangType;
       setSelectedLang(value);
     }
   }, []);
 
   function changeLanguage(e: React.ChangeEvent<HTMLSelectElement>) {
-    const lang = e.target.value as Lang;
+    const lang = e.target.value as LangType;
 
     setSelectedLang(lang);
     CookieSetter({ key: "lang", value: lang });
@@ -71,12 +32,11 @@ export default function LanguageSelector() {
   return (
     <div className="flex items-center text-sm">
       <select id="langSelector" value={selectedLang} onChange={changeLanguage} className="p-2 bg-primary border-none rounded-sm text-white">
-        <option className="border-none outline-0" value="english">
-          English
-        </option>
-        <option className="border-none outline-0" value="spanish">
-          Spanish
-        </option>
+        {LangVar.map((lang) => (
+          <option key={lang} className="border-none outline-0 capitalize" value={lang}>
+            {lang}
+          </option>
+        ))}
       </select>
     </div>
   );

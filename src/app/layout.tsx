@@ -70,6 +70,7 @@ export default function RootLayout({
             });
           `}
         </Script>
+        <meta charSet="UTF-8" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-TBK9RJDNKF" strategy="afterInteractive" />
